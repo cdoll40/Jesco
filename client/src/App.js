@@ -6,6 +6,7 @@ import NavBar from './components/NavBar'
 import HomePage from './pages/HomePage'
 import SignIn from './pages/SignInPage';
 import Register from './pages/RegisterPage';
+import Contact from './pages/ContactPage';
 
 const darkTheme = createTheme({
   palette: {
@@ -22,6 +23,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path='/SignIn' element={<SignIn />} />
           <Route path='/Register' element={<Register />} />
+          <Route path='/Contact' element={<Contact />} />
         </Routes>
       </UserContextProvider>
     </ThemeProvider>
