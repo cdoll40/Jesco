@@ -66,8 +66,8 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Main call to action</Button>
-              <Button variant="outlined">Secondary action</Button>
+              <Button component='a' href={'/Contact'} variant="contained">Contact Us</Button>
+                                                                                           {/* ADD BUTTON FOR MAP */}
             </Stack>
           </Container>
         </Box>
