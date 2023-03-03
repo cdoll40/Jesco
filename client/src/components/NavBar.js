@@ -176,9 +176,13 @@ function ResponsiveAppBar() {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
+                <MenuItem key='create' component='a' href='/create'>
+                  <Typography textAlign='center'>Create Post</Typography>
+                </MenuItem>
                 <MenuItem key='logout' onClick={logout}>
                   <Typography textAlign='center'>Logout</Typography>
                 </MenuItem>
+                
                 {/* {settings.map((setting) => (
                   <MenuItem key={setting} onClick={handleCloseUserMenu}>
                     <Typography textAlign="center">{setting}</Typography>

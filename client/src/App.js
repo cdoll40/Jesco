@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage'
 import SignIn from './pages/SignInPage';
 import Register from './pages/RegisterPage';
 import Contact from './pages/ContactPage';
+import CreatePost from './pages/CreatePost'
 
 const darkTheme = createTheme({
   palette: {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/SignIn' element={<SignIn />} />
           <Route path='/Register' element={<Register />} />
           <Route path='/Contact' element={<Contact />} />
+          <Route path="/create" element={<CreatePost />} />
         </Routes>
       </UserContextProvider>
     </ThemeProvider>
