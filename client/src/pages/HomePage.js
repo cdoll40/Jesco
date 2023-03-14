@@ -13,6 +13,11 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from '../components/Footer.js'
 import Post from '../components/Post.js'
 
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const darkTheme = createTheme({
@@ -74,16 +79,16 @@ export default function Album() {
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
                 
-                <Post />
+                {/* <Post /> */}
                 
-                {/* <Card
+                <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
                     component="img"
                     sx={{
                       // 16:9
-                      pt: '56.25%',
+                      // pt: '56.25%',
                     }}
                     image="https://source.unsplash.com/random"
                     alt="random"
@@ -101,7 +106,7 @@ export default function Album() {
                     <Button size="small">View</Button>
                     <Button size="small">Edit</Button>
                   </CardActions>
-                </Card> */}
+                </Card>
               </Grid>
             ))}
           </Grid>
